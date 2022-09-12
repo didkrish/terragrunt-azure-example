@@ -16,7 +16,7 @@ locals {
   
   location          = local.region_vars.locals.location
   environment       = local.environment_vars.locals.environment
-  subscription_id   = 0acb0567-53f9-4062-8e2e-4757e4814cd8
+  subscription_id   = "0acb0567-53f9-4062-8e2e-4757e4814cd8"
 }
 
 # Generate Azure providers

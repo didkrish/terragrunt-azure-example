@@ -16,7 +16,7 @@ locals {
   
   location          = local.region_vars.locals.location
   environment       = local.environment_vars.locals.environment
-  subscription_id   = local.subscription_vars.locals.subscription_id
+  subscription_id   = 0acb0567-53f9-4062-8e2e-4757e4814cd8
 }
 
 # Generate Azure providers
@@ -39,7 +39,7 @@ generate "versions" {
 
     provider "azurerm" {
         features {}
-        subscription_id = "${local.subscription_id}"
+        subscription_id = "0acb0567-53f9-4062-8e2e-4757e4814cd8"
     }
 
     provider "azuread" {
@@ -50,7 +50,7 @@ EOF
 remote_state {
     backend = "azurerm"
     config = {
-        subscription_id = "${local.subscription_id}"
+        subscription_id = "0acb0567-53f9-4062-8e2e-4757e4814cd8"
         key = "${path_relative_to_include()}/terraform.tfstate"
         resource_group_name = "rg-terragrunt-example-001"
         storage_account_name = "stterragruntexample001"

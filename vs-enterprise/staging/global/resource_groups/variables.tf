@@ -5,5 +5,5 @@ variable "location" {
 
 variable vnet_resource_group_name {
   type        = string
-  description = "subh-rg"
+  description = "rama-rg"
 }

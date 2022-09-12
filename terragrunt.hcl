@@ -53,7 +53,7 @@ remote_state {
         subscription_id = "0acb0567-53f9-4062-8e2e-4757e4814cd8"
         key = "${path_relative_to_include()}/terraform.tfstate"
         resource_group_name = "rg-terragrunt-example-001"
-        storage_account_name = "stterragruntexample001"
+        storage_account_name = "stterragruntexample003"
         container_name = "environment-states"
     }
     generate = {
